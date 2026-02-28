@@ -122,6 +122,12 @@ class LibsodiumConan(ConanFile):
             sln_folders["Visual Studio"]["17"] = "vs2022"
             sln_folders["msvc"]["193"] = "vs2022"
             default_folder = "vs2022"
+        # msvc 2026 support was added in 1.0.21
+        if self.version == "1.0.21":
+            sln_folders["Visual Studio"]["18"] = "vs2026"
+            # 194 was intentionally skipped by MS (v144 toolchain was skipped too).
+            sln_folders["msvc"]["195"] = "vs2026"
+            default_folder = "vs2026"
 
         return sln_folders.get(str(self.settings.compiler), {}).get(str(self.settings.compiler.version), default_folder)
 
