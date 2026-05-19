@@ -8,3 +8,6 @@ patches:
       "patch_file": "patches/vs2026.patch"
       "patch_source": "https://chromium-review.googlesource.com/c/webm/libvpx/+/7602275"
       "patch_type": "portability"
+    - "patch_description": "add support for ARM64 msvc v145 / VS 2026 (missing in prev)"
+      "patch_file": "patches/vs2026-arm64.patch"
+      "patch_type": "portability"

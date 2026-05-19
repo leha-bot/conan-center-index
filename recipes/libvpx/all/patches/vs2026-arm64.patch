@@ -1,0 +1,13 @@
+diff --git a/configure b/configure
+index 8eee4e442..eed455e33 100755
+--- a/configure
++++ b/configure
+@@ -112,6 +112,8 @@ all_platforms="${all_platforms} arm64-win64-vs16"
+ all_platforms="${all_platforms} arm64-win64-vs16-clangcl"
+ all_platforms="${all_platforms} arm64-win64-vs17"
+ all_platforms="${all_platforms} arm64-win64-vs17-clangcl"
++all_platforms="${all_platforms} arm64-win64-vs18"
++all_platforms="${all_platforms} arm64-win64-vs18-clangcl"
+ all_platforms="${all_platforms} armv7-android-gcc"   #neon Cortex-A8
+ all_platforms="${all_platforms} armv7-darwin-gcc"    #neon Cortex-A8
+ all_platforms="${all_platforms} armv7-linux-rvct"    #neon Cortex-A8
